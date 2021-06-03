@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node_modules/typescript/bin/tsc",
+    "watch": "node_modules/typescript/bin/tsc -w --preserveWatchOutput",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,8 @@
   "homepage": "https://github.com/anascotti/dragons-node#readme",
   "dependencies": {
     "aws-sdk": "^2.920.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.2"
   }
 }
